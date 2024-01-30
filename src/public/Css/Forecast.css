@@ -1,0 +1,163 @@
+body{
+    opacity:1;
+    text-align: center;
+    background-image: url('/images/WorldMap.jpg');
+    background-size: 100%;
+    transition:opacity 1s ease-in-out, background-image 1s ease-in-out;
+    animation: change 5s ease-in-out;
+
+}
+
+.card{
+    opacity: 0.9;
+    position: relative;
+    background-color: lightcyan;
+    width: 450px;
+    height:500px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+
+.animation * {
+
+    position:relative;
+    z-index: 1;
+}
+.press img{
+    height: 15px;
+    width: 15px;
+
+}
+.City{
+    font-size:24px;
+}
+
+.search{
+    position: absolute;
+    bottom: 0px;
+    left: 120px;
+    background-color: rgb(166, 219, 219);
+    border-radius: 10px;
+    height: 40px;
+    width: 250px;
+
+}
+
+.search input{
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.Information{
+    display:flex;
+    height: 150px;
+}
+
+.Viento{
+    width: 33.33%;
+}
+
+.Viento img{
+    position:relative;
+    height:60px;
+    margin-top: 10px;
+    margin-left: 40px;
+    display:block;
+
+}
+
+.InfoViento{
+    margin-top: 15px;
+}
+.Humedad{
+    width:33.33%;
+}
+
+.InfoHumedad{
+    margin-top: 15px;
+}
+
+.Humedad img{
+    margin-left: 45px;
+    margin-top: 10px;
+    justify-content: center;
+    display:block;
+    height:60px;
+}
+
+
+.Temperatura{
+    width: 33.33%;
+}
+.InfoTemperatura{
+    margin-top: 15px;
+}
+
+.Temperatura img{
+    margin-left: 45px;
+    margin-top: 10px;
+    justify-content: center;
+    display:block;
+    height:60px;
+}
+
+
+@keyframes cloudAnimation{
+
+    from{
+        transform: translateX(-500px);
+    }
+    to{
+        transform: translateX(100vw);
+    }
+
+
+}
+
+@keyframes RainAnimation{
+
+    from{
+        transform: translateY(-50px);
+    }
+    to{
+        transform: translateY(45vw);
+    }
+
+}
+
+@keyframes sunAnimation{
+
+    0% {
+        transform: rotate(0) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform:rotate(360deg) scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(0) scale(1);
+        opacity: 1;
+    }
+
+}
+
+.snow{
+    z-index: 0;
+    animation: RainAnimation 10s linear infinite;
+}
+
+.sun{
+    z-index: 0;
+    animation: sunAnimation 10s linear infinite;
+}
+
+.rain{
+    z-index: 0;
+    animation: RainAnimation 10s linear infinite;
+}
+.clouds{
+    z-index: 0;
+    animation: cloudAnimation 10s linear infinite;
+}

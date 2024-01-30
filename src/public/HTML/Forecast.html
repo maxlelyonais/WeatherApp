@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title> Forecast</title>
+        <script defer src = "../Js/Common.js"></script>
+        <script defer src = "../Js/Forecast.js"></script>
+        <link rel="stylesheet" type="text/css" href="../Css/Forecast.css">
+        <link rel="icon" type="image/png" href="/images">
+        <script src="https://kit.fontawesome.com/094d8d7db9.js" crossorigin="anonymous"></script>
+    </head>
+    <body> 
+
+        <div class = "animation"></div>
+        <div id="commonElementsContainer"></div>
+        <div class = "card">
+
+            <div class = "PlaceInformation">
+                <image id = "imageContainer" src = "/Images/clouds" alt = "Image"></image>
+                <h1 class = "City" >Ciudad: </h1>
+
+                <div class = "Information">
+                   <div class = "Temperatura">
+                        Temperatura
+                        <img src = "/Images/Temperatura">
+                        <div class = "InfoTemperatura"> InfoTemperatura</div>
+                   </div>
+                   <div class = "Humedad">
+                        Humedad
+                        <img src = "/Images/Humedad">
+                        <div class = "InfoHumedad">InfoHumedad</div>
+
+                   </div>
+                   <div class = "Viento">
+                        Viento 
+                        <img src = "/Images/wind">
+                        <div class = "InfoViento">InfoViento</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class ="search">
+                <input class = "ciudad" type = "text" placeholder="Enter the city name">
+                <button class = "press"> <img src = "/Images/search" alt = "No se visualiza imagen"></image></button>
+            </div>
+
+
+        </div>
+    </body>
+
+</html>

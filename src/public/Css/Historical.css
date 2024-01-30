@@ -1,0 +1,171 @@
+body{
+    background-size: cover;
+    background-image: url('/images/WeatherImages.jpg');;
+}
+
+.container{
+    position:absolute;
+    left: 10%;
+    top: 10%;
+    z-index: -1;
+    width: 85%;
+    height:80%;
+    border-radius: 5%;
+    background-color: #92C7CF;
+}
+
+.search button{
+    width:15%;
+}
+
+.search input{
+    border-radius: 14%;
+    margin-left:-50%;
+    margin-top:-50%;
+    width:70%;
+}
+
+.search{
+    position:relative;
+    top:20%;
+    left:10%;
+    border-radius: 10px;
+    height: 80%;
+    width: 20%;
+    
+
+}
+.press img{
+    display:block;
+    width: 60%;
+    height:5%;
+}
+
+.nav{
+    display:flex;
+    flex-direction: center;
+    justify-content: space-between;
+    margin-bottom:-7%;
+    background-color: #E5E1DA;
+    border-radius: 10px;
+    height:7%;
+}
+.n{
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    margin-left:2%;
+    margin-left: 4%;
+    border-radius: 5px;
+    text-align: center;
+    width:15%;
+    background-color: #FBF9F1 ;
+}
+.n:hover:not(.search){
+    background-color: #AAD7D9;
+    transition:  background-color 0.3s ease; 
+    border-bottom: 1px solid black;
+
+}
+
+.content{
+    margin-top: 8%;
+}
+
+
+img[class^="Image-"]{
+    position: absolute;
+    top:-3%;
+    margin-left: -3%;
+    width:22%;
+    height:33%;
+}
+
+
+div[class^="InfoHumedad"] {
+    position:absolute;
+    top:35%;
+    height:20%;
+    width:16%;
+}
+
+div[class^="InfoTemperatura"] {
+    top:74%;
+    position:absolute;
+    height:20%;
+    width:16%;
+}
+
+div[class^="ContentT"]{
+    position:absolute;
+    left:60%;
+}
+
+div[class^="ContentV"]{
+    position:absolute;
+    left:50%;
+}
+
+div[class^="InfoViento"] {
+    position:absolute;
+    height:15%;
+    width:16%;
+    margin-top:1.3%;
+    margin-left: 0.8%;
+}
+
+img[class^="ImagesH"]{
+    width: 50%;
+    height:80%;
+
+}
+
+img[class ^="ImageV"]{
+    width:40%;
+    height:100%;
+}
+
+div[class ^="Content"]{
+    position:absolute;
+    right: 5%;
+    top: 25%;
+}
+
+
+div[class ^="Tiempo"]{
+    position:absolute;
+    top:28%;
+    margin-left: 0%;
+
+}
+
+div[class^="ImagesT"]{
+  width: 10%;
+  height: 100%;
+  margin-left: 20%;
+  border: 1px solid black;
+  border-radius: 20%;
+  position: absolute;
+}
+
+.content table{
+    position:absolute;
+    height:90%;
+    width:100%;
+}
+
+.content td{
+    border-radius: 5px;
+    border: 2px solid black;
+    text-align: left;
+    width:10%;
+    height: 100%;
+}
+
+div[class^="progress-"]{
+    width: 100%;
+    bottom:0%;
+    height:100%;
+    position: absolute;
+    border-radius: 20%;
+    transition:all 0.2s ease-in-out;
+}

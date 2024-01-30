@@ -1,0 +1,90 @@
+.sidebar{
+    top:0;
+    position: fixed;
+    left:-23%;
+    width: 23%;
+    height:100%;
+    background-color: #063146;
+    transition: all .5s ease;
+}
+
+.sidebar header{
+    top: 0px;
+    font-size: 2vw;
+    color:white;
+    border-bottom: 0.5vw solid black ;
+    text-align: center;
+    line-height: 7vw;
+    background-color: cornflowerblue;
+}
+
+.sidebar ul{
+    display:block;
+    height:100%;
+    width:100%;
+    font-size: 2vw;
+    color:white;
+    padding-left:2.5vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.sidebar li{
+    padding-bottom: 1vw;
+    margin-bottom: 1vw;
+    margin-right: 2.8vw;
+    text-align:left;
+    transition:.4s;
+    border-bottom: 0.1vw solid black;
+}
+
+
+.sidebar li:hover{
+    padding-left: 5vw;
+    color:orange;
+}
+
+#check{
+    display:none;
+}
+
+label #btn, label #cancel{
+    position:absolute;
+    cursor:pointer;
+    background: #042331;
+    border-radius:0.3vw;
+}
+
+label #btn {
+    left: 2vw; /* Use vw for left position */
+    top: 2.5vh; /* Use vh for top position */
+    font-size: 1.5vw;
+    color: white;
+    padding: 1vw 2vw; /* Use vw for padding */
+    transition: all 0.4s ease;
+}
+
+label #cancel {
+    z-index: 1111;
+    left: -15vw; /* Use vw for left position */
+    top: 1.7vh; /* Use vh for top position */
+    font-size: 2vw; /* Use vw for font size */
+    color: #0a5275;
+    padding: 0.4vw 0.9vw; /* Use vw for padding */
+    transition: all 0.3s ease;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+}
+
+#check:checked ~ label #btn {
+    left: 25vw; /* Use vw for left position */
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel {
+    left: 17vw; /* Use vw for left position */
+}
+
+
